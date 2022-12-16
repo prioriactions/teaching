@@ -1,0 +1,74 @@
+/*
+Custom CSS template for ioslides
+Author: Matteo Courthoud
+Repo: https://github.com/matteocourthoud/ioslides-theme
+*/
+
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans&display=swap');
+
+/* Slide: change font */
+slides > slide {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: scroll;
+}
+
+/* Slide: text color black */
+slides > slide > article {
+  color: black;
+  font-weight: 300;
+}
+
+/* Slide: transition slides white */
+slides > slide.dark {
+  background-color: white !important;
+}
+
+
+/* Code */
+pre {
+  width: auto !important;
+  left: 0px !important;
+  padding: 10px 20px 10px 20px !important;
+  border-radius: 5px !important;
+  border-color: #adb5bd !important;
+  border-width: thin !important;
+  border-style: solid !important;
+}
+
+pre.prettyprint {
+  background-color: #f8f8f8 !important;
+}
+
+
+
+
+
+
+
+/* Logo */
+.gdbar img {
+  width: 200px !important;
+  height: 180px !important;
+  margin: -50px -50px;
+}
+
+.gdbar {
+  width: 400px !important;
+  height: 200px !important;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 75px;
+  height: 75px;
+  background-size: 75px 75px;
+}
+
+li.section { color: red; 
+  background-color: red;
+}
+
+li.subsection {font-size: .95em; 
+               list-style-type:circle;
+               background-color: #e5e5e5;
+}
